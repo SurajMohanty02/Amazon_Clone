@@ -1,0 +1,48 @@
+.mirror {
+  margin-top: 70px;
+  width: 100%;
+}
+
+.row {
+  margin: 10px 0px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+.nature {
+  cursor: pointer;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.333333333333%;
+  /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.heading {
+  text-align: left;
+  margin-top: 10px;
+  border: 1px solid #f1f1f1;
+}
+.heading:hover {
+  border: 1px solid black;
+}
+.href {
+  text-decoration: none !important;
+  color: rgb(26, 194, 129);
+}

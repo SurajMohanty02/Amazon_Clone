@@ -1,0 +1,13 @@
+.banner {
+  width: 100%;
+  height: 31rem;
+  background-position: top;
+  margin-top: 60px;
+}
+
+@media (max-width: 650px) {
+  .banner {
+    width: 100%;
+    min-width: 900px;
+  }
+}

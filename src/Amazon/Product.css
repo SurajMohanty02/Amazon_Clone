@@ -1,0 +1,88 @@
+.product {
+  width: 100%;
+  position: relative;
+  top: 300px;
+  border: none;
+}
+body {
+  background-color: #f1f1f1;
+}
+.product__container {
+  display: flex;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+.nature {
+  cursor: pointer;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+
+  /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+
+/* Style the buttons */
+.small > img {
+  height: 120px;
+  margin-top: 3px;
+  object-fit: fill;
+}
+
+.small {
+  background-color: white;
+  margin-top: 3px;
+}
+.medium > img {
+  height: 490px;
+}
+.medium {
+  background-color: white;
+}
+@media (max-width: 1252px) {
+  .medium > img {
+    height: 400px;
+  }
+}
+@media (max-width: 1050px) {
+  .medium > img {
+    height: 330px;
+  }
+}
+@media (max-width: 850px) {
+  .medium > img {
+    height: 280px;
+  }
+}
+.small:hover {
+  cursor: pointer;
+}

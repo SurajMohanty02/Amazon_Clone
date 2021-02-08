@@ -1,0 +1,189 @@
+section > h1 {
+  text-align: left;
+  font-size: 30px;
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+  padding: 10px;
+  width: 200px;
+  margin-top: 60px;
+}
+
+.cartbox {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+
+  margin-left: 20px;
+  min-width: 900px;
+}
+.cartbox__container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+.summery {
+  text-align: center;
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+  width: 300px;
+  height: 180px;
+  margin-right: 100px;
+  color: white;
+  position: static;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.summery > h3 {
+  margin: 5px 0px 10px 0px;
+  text-decoration: underline;
+}
+.summery__container {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+.totalprice {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.space {
+  margin-left: 20px;
+}
+.bttn {
+  padding: 10px 12px;
+  cursor: pointer;
+  background: linear-gradient(to right, #cb356b, #bd3f32);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  width: 150px;
+}
+.bttn:hover {
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+.delete {
+  color: gray;
+  cursor: pointer;
+}
+.delete:hover {
+  color: #bd3f32;
+}
+.cl-1,
+.cl-2,
+.cl-3,
+.cl-4,
+.cl-5,
+.cl-6 {
+  width: 60%;
+}
+.cartbox__heading {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 80%;
+
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+.cartbox__data > .cl-1 > img {
+  height: 70px;
+  width: 100px;
+  object-fit: contain;
+}
+.cartbox__data {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 10px 0px 10px 0px;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+.cartbox > h1 {
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 10px;
+  background-color: orange;
+  width: 200px;
+  height: fit-content;
+  margin-right: 10px;
+  font-weight: 700px;
+}
+
+.nodata {
+  margin-top: 60px;
+  background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-family: Montserrat;
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.texty {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 50px;
+  color: white;
+}
+
+.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;
+}
+.bounceball:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #1d976c, #93f9b9);
+  transform-origin: 50%;
+  animation: bounce 500ms alternate infinite ease;
+}
+
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
